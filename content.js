@@ -148,7 +148,7 @@ window.EXCEL_CONTENT = {
     pageTitle: "Fixture Gallery",
     hero: {
       eyebrow: "Fixture gallery / Selected builds",
-      title: "Proof lives in the <span>details.</span>",
+      title: "Proof lives in <span>details.</span>",
       text: "Real fixtures, real scale, real production thinking. Select any build to see it in motion."
     },
     introduction: {
