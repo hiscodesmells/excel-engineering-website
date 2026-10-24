@@ -13,6 +13,7 @@
   <link rel="icon" href="assets/favicon.png" type="image/png">
   <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
   <link rel="stylesheet" href="styles.css">
+  <link rel="preload" as="image" href="assets/media/fixture-closeup-1280.webp" type="image/webp" fetchpriority="high" media="(min-width: 901px)">
 </head>
 <body class="design-03-redline-editorial" data-page="home">
   <a class="skip-link" href="#main" data-copy="common.skipLink">Skip to content</a>
@@ -38,8 +39,8 @@
         <a class="circle-link" href="work.html"><span data-copy="home.hero.link">See the<br>work</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></a>
       </div>
       <figure class="redline-image reveal">
-        <video autoplay muted loop playsinline preload="metadata" poster="assets/media/fixture-closeup.jpg">
-          <source src="assets/video/fixture-closeup.mp4" type="video/mp4">
+        <video autoplay muted loop playsinline preload="none" poster="assets/media/fixture-closeup-1280.webp" data-autoplay>
+          <source data-src="assets/video/fixture-closeup.mp4" type="video/mp4">
         </video>
         <span class="live-label"><i></i> <span data-copy="home.hero.mediaLiveLabel">In-house build</span></span>
         <figcaption><b data-copy="home.hero.mediaTitle">Built for critical assemblies.</b><span data-copy="home.hero.mediaNote">Proved out on CMM.</span></figcaption>
@@ -103,7 +104,7 @@
     </div>
   </footer>
   <div class="cursor-dot" aria-hidden="true"></div>
-  <script src="content.js"></script>
-  <script src="script.js"></script>
+  <script src="content.js" defer></script>
+  <script src="script.js" defer></script>
 </body>
 </html>

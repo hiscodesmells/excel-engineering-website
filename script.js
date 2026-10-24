@@ -68,6 +68,23 @@ window.addEventListener("scroll", () => {
   document.documentElement.style.setProperty("--scroll", `${max > 0 ? scrollY / max * 100 : 0}%`);
 }, { passive: true });
 
+/*
+ * Autoplay videos (<video data-autoplay> with <source data-src>): only fetched on larger
+ * screens, without reduced motion or Save-Data, and only after the page has loaded.
+ * Otherwise the poster image stays in place.
+ */
+const autoplayVideos = all("video[data-autoplay]");
+const motionAllowed = matchMedia("(min-width: 768px) and (prefers-reduced-motion: no-preference)").matches
+  && !navigator.connection?.saveData;
+if (autoplayVideos.length && motionAllowed) {
+  const startVideos = () => autoplayVideos.forEach(video => {
+    video.querySelectorAll("source[data-src]").forEach(source => { source.src = source.dataset.src; });
+    video.load();
+  });
+  if (document.readyState === "complete") startVideos();
+  else window.addEventListener("load", startVideos, { once: true });
+}
+
 /* Gallery videos */
 all(".work-media").forEach(media => {
   const video = media.querySelector("video");
