@@ -118,7 +118,7 @@ body{overflow-x:hidden}
 .facility p{margin:0 1.8rem 2rem;line-height:1.6}
 .facility-strip{display:grid;grid-template-columns:repeat(4,1fr);gap:0;border:4px solid var(--black);border-top:0}
 .facility-strip img{aspect-ratio:4/3;object-fit:cover;width:100%;height:100%;border-right:4px solid var(--black)}
-.facility-strip img:last-child{border-right:0}
+.facility-strip picture:last-child img{border-right:0}
 .materials .section-head>p{font-size:17px;line-height:1.6}
 .quality-block>div>h2{font-weight:900;text-transform:uppercase;letter-spacing:-.04em}
 .quality-block .section-kicker{color:#ff4d55}
@@ -188,8 +188,8 @@ body{overflow-x:hidden}
   .home-gallery-grid figure,.facility{border-right:0;border-bottom:4px solid var(--black)}
   .home-gallery-grid figure:last-child,.facility:last-child{border-bottom:0}
   .facility-strip{grid-template-columns:1fr 1fr}
-  .facility-strip img:nth-child(2){border-right:0}
-  .facility-strip img:nth-child(-n+2){border-bottom:4px solid var(--black)}
+  .facility-strip picture:nth-child(2) img{border-right:0}
+  .facility-strip picture:nth-child(-n+2) img{border-bottom:4px solid var(--black)}
   .difference-grid{grid-template-columns:1fr}
   .difference-grid article{border-right:0;border-bottom:2px solid #fff;padding:2rem}
   .difference-grid article:last-child{border-bottom:0}
@@ -229,3 +229,7 @@ body{overflow-x:hidden}
   .principle-strip i{display:none}
   .gallery-intro.section-pad{padding-top:3.5rem;padding-bottom:3rem;gap:1rem}
 }
+
+/* Responsive images: <picture> wrappers add no box, so layout rules keep targeting the <img> */
+picture{display:contents}
+picture>source{display:none}
