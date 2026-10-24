@@ -63,9 +63,17 @@ if ("IntersectionObserver" in window) {
   all(".reveal").forEach(element => element.classList.add("visible"));
 }
 
+/* Scroll progress line: set on the line itself (not :root) and at most once per frame */
+const scrollLine = one(".scroll-line");
+let scrollQueued = false;
 window.addEventListener("scroll", () => {
-  const max = document.documentElement.scrollHeight - innerHeight;
-  document.documentElement.style.setProperty("--scroll", `${max > 0 ? scrollY / max * 100 : 0}%`);
+  if (!scrollLine || scrollQueued) return;
+  scrollQueued = true;
+  requestAnimationFrame(() => {
+    scrollQueued = false;
+    const max = document.documentElement.scrollHeight - innerHeight;
+    scrollLine.style.setProperty("--scroll", `${max > 0 ? scrollY / max * 100 : 0}%`);
+  });
 }, { passive: true });
 
 /*
@@ -152,8 +160,17 @@ form?.addEventListener("submit", event => {
 /* Cursor accent (pointer devices only) */
 const dot = one(".cursor-dot");
 if (dot && matchMedia("(pointer: fine)").matches) {
+  // Moved with transform (no layout) and at most once per frame.
+  let x = 0, y = 0, queued = false;
   window.addEventListener("pointermove", event => {
-    dot.style.left = `${event.clientX}px`;
-    dot.style.top = `${event.clientY}px`;
-  });
+    x = event.clientX;
+    y = event.clientY;
+    if (queued) return;
+    queued = true;
+    requestAnimationFrame(() => {
+      queued = false;
+      dot.style.left = dot.style.top = "0";
+      dot.style.transform = `translate(${x}px, ${y}px) translate(-50%, -50%)`;
+    });
+  }, { passive: true });
 }
