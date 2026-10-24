@@ -6,180 +6,343 @@
  * Edit only the words inside quotes.
  * Keep commas, brackets and property names unchanged.
  * <br> creates a line break. <span>...</span> applies the red accent.
+ *
+ * Lists (items, points, photos) match the page layout one-to-one:
+ * change the wording freely, but adding or removing entries needs a
+ * matching change in the page's HTML.
+ *
+ * Confidentiality: never add customer names, part numbers or vehicle
+ * model codes. Describe parts generically (e.g. "Dash panel assembly").
  */
 window.EXCEL_CONTENT = {
   common: {
-    siteTitle: "EXCEL Checking Fixtures",
-    navigation: ["Home", "Capabilities", "Fixture Gallery"],
-    discussButton: "Discuss a program",
+    siteTitle: "EXCEL Engineering",
+    tagline: "Checking Fixtures<br>Peace of Mind",
+    navigation: ["Home", "About", "Capabilities", "Gallery", "Contact"],
+    discussButton: "Discuss a project",
     skipLink: "Skip to content",
     footer: {
-      eyebrow: "Your next program deserves certainty.",
-      title: "Make every check<br>mean something.",
-      link: "Start the conversation",
-      description: "Purpose-built checking fixtures for automotive components and assemblies.",
-      location: "India",
-      support: "Global program support",
-      copyright: "EXCEL. Precision, made visible."
+      eyebrow: "Reliable checking fixtures for critical assemblies & stampings",
+      title: "Peace of mind,<br>built in.",
+      link: "Start a conversation",
+      description: "Design, manufacture and CMM prove-out of checking fixtures for automotive assemblies and stampings.",
+      addressLabel: "Visit",
+      address: "80K/II, 15A, Rajender Nagar Industrial Area,<br>Mohan Nagar, Ghaziabad 201007<br>Delhi NCR, India",
+      phoneLabel: "Call",
+      phone: "+91 120 265 7057",
+      mobiles: "+91 98111 50794 · +91 70426 41189",
+      emailLabel: "Write",
+      email: "sales@excelengg2.com",
+      copyright: "EXCEL Engineering. All rights reserved."
     }
   },
 
   home: {
-    pageTitle: "Home",
+    pageTitle: "Reliable Checking Fixtures",
+    metaDescription: "EXCEL Engineering designs and builds reliable checking fixtures for critical automotive assemblies and stampings in Ghaziabad, Delhi NCR — proved out on CMM in one go.",
     hero: {
-      eyebrow: "Automotive checking fixtures / Made in India",
-      title: "Not just<br>fixtures.<br><span>Answers.</span>",
-      introduction: "EXCEL builds production-ready checking fixtures for teams that cannot afford ambiguity.",
+      eyebrow: "Checking fixtures · Ghaziabad, Delhi NCR",
+      title: "Fixtures<br>you can<br><span>trust.</span>",
+      introduction: "EXCEL Engineering designs and builds reliable checking fixtures for critical automotive assemblies and stampings — proved out on CMM, finished like a master gauge, and delivered with peace of mind.",
       link: "See the<br>work",
-      mediaLiveLabel: "Fixture in motion",
-      mediaTitle: "Built for the line.",
-      mediaNote: "Designed for the person using it."
+      mediaLiveLabel: "In-house build",
+      mediaTitle: "Built for critical assemblies.",
+      mediaNote: "Proved out on CMM."
     },
-    manifesto: {
-      eyebrow: "Why EXCEL",
-      title: "A fixture is only valuable when it makes quality <span>obvious.</span>",
-      text: "That belief guides every datum, clamp, gauge and operator touchpoint. The result is a tool that fits the component, the inspection plan and the pace of production."
-    },
-    services: {
-      eyebrow: "Core capabilities",
-      link: "See complete scope",
+    facts: [
+      ["15", "Years in the Indian checking-fixture industry"],
+      ["10", "Months of on-the-job training in China"],
+      ["2", "In-house CMMs, up to 3000 mm travel"],
+      ["4", "In-house functions: design, CMM, VMC and tool room"]
+    ],
+    challenges: {
+      eyebrow: "Sound familiar?",
+      title: "The usual problems with <span>checking fixtures.</span>",
+      introduction: "Buyers of checking fixtures for critical assemblies and stampings tell us the same five stories. We built EXCEL to end them.",
+      problemLabel: "The problem",
+      answerLabel: "The EXCEL answer",
       items: [
         {
-          title: "Checking Fixtures",
-          text: "Attribute and variable checking solutions for stamped, molded, machined and assembled parts.",
-          link: "Explore"
+          title: "Inaccuracy",
+          problem: "The fixture fails on CMM in the first attempt, results change from check to check, and pins and bushes have play.",
+          answer: "Proved out on CMM in one go, with a detailed inspection report for every pin and bush — and no play."
         },
         {
-          title: "Inspection Strategy",
-          text: "Datum translation, clamp logic, gauge selection and access designed around your control plan.",
-          link: "Explore"
+          title: "Delays",
+          problem: "Vague timelines, no regular status, endless follow-ups and an eleventh-hour shock.",
+          answer: "Genuine timeline commitments, authentic regular status updates and early notice of any foreseen delay."
         },
         {
-          title: "Build & Prove-out",
-          text: "Robust manufacture, assembly, inspection and functional validation before handover.",
-          link: "Explore"
+          title: "Ordinary finish",
+          problem: "Basic surface finish, weak paint, unprotected areas that rust and confusing labels.",
+          answer: "Premium aesthetics comparable with international fixtures, special care for rust, coating and paint, and detailed labeling."
+        },
+        {
+          title: "Build quality",
+          problem: "Too heavy or too weak, local unbranded parts and quality that changes from fixture to fixture.",
+          answer: "Standardized child parts, branded bought-out parts only, and the right heat treatment — with proof."
+        },
+        {
+          title: "Slow service",
+          problem: "Delayed responses, too many hassles and weak documentation.",
+          answer: "A responsive team, clear understanding of your needs and complete documentation."
         }
       ]
     },
     standard: {
-      mediaLabel: "Production fixture / detail",
-      eyebrow: "The EXCEL standard",
-      title: "Complex in capability.<br>Simple in use.",
+      mediaLabel: "Dashboard lower assembly fixture",
+      eyebrow: "The EXCEL difference",
+      title: "Attention to detail.<br>Big difference.",
       points: [
-        "Clear datum and clamp sequence",
-        "Operator-conscious ergonomics",
-        "Serviceable, durable construction",
-        "Evidence-led prove-out"
+        "Standardized child parts & branded BOP only",
+        "Right heat treatment for every relevant part — with proof",
+        "Detailed inspection report of pins & bushes",
+        "No play in pins, bushes, hinges or swing units",
+        "Proved out on CMM in one go",
+        "Premium finish and detailed labeling"
       ],
-      link: "View fixture gallery"
+      link: "See our capabilities"
+    },
+    gallery: {
+      eyebrow: "Selected work",
+      title: "Built for critical assemblies.",
+      link: "View the full gallery",
+      items: [
+        ["Rear axle beam assembly", "1950 × 850 mm"],
+        ["Steering support member", "1750 × 750 mm"],
+        ["Body side outer", "1680 × 1590 mm"]
+      ]
     },
     process: {
-      eyebrow: "One accountable workflow",
-      title: "From CAD to confident check.",
-      introduction: "One engineering conversation from initial review through dispatch.",
+      eyebrow: "How we work",
+      title: "From design to CMM prove-out.",
+      introduction: "Design, machining and measurement stay under one roof — so quality and timelines stay in our hands.",
       steps: [
-        ["Understand", "Part, GD&T, control plan, takt and operator context."],
-        ["Engineer", "Datum strategy, loading sequence and inspection concept."],
-        ["Build", "Machining, assembly, finishing and meticulous fit-up."],
-        ["Validate", "Inspection, functional prove-out and documented handover."]
+        ["Design", "In-house 3D and 2D design, shaped by exposure to the fixture standards of major vehicle OEMs in India."],
+        ["Build", "In-house VMC and tool room, standardized child parts, branded BOP and a dedicated vendor base."],
+        ["Verify", "Heat treatment with proof, pin and bush inspection reports, and CMM prove-out in one go."],
+        ["Deliver", "Regular, authentic status updates throughout — and responsive support after handover."]
       ]
     },
     cta: {
-      eyebrow: "Have a component in development?",
-      title: "Bring us the difficult geometry.",
-      link: "Start a fixture brief"
+      eyebrow: "Developing a critical assembly or stamping?",
+      title: "Let’s build your next checking fixture.",
+      link: "Discuss your project"
+    }
+  },
+
+  about: {
+    pageTitle: "About",
+    metaDescription: "About EXCEL Engineering: 15 years in the Indian checking-fixture industry, in-house design, CMM, VMC and tool room in Ghaziabad, Delhi NCR.",
+    hero: {
+      eyebrow: "About EXCEL Engineering",
+      title: "Built on <span>peace of mind.</span>",
+      text: "We design and manufacture checking fixtures for critical automotive assemblies and stampings in Ghaziabad, Delhi NCR. Our aim is simple: a fixture your team — and your client — can trust from the first CMM check."
+    },
+    story: {
+      eyebrow: "Our story",
+      title: "Trained abroad. <span>Proven</span> in India.",
+      text: "Our foundation is 10 months of on-the-job training in China, followed by 15 years in the Indian checking-fixture industry. Along the way we have worked to the fixture standards of major vehicle OEMs in India — and shaped our process around the problems buyers know too well: CMM failures, delays, rust and endless follow-ups."
+    },
+    strength: {
+      eyebrow: "EXCEL strength",
+      title: "What stands behind every fixture.",
+      items: [
+        ["Training", "10 months of on-the-job training in checking-fixture development in China."],
+        ["Experience", "15 years of experience in the Indian checking-fixture industry."],
+        ["Standards", "Exposure to the checking-fixture standards of major vehicle OEMs in India."],
+        ["In-house", "Design, CMM, VMC and tool room under one roof."]
+      ]
+    },
+    facilities: {
+      eyebrow: "Facilities",
+      title: "Under one roof.",
+      introduction: "From the first sketch to the final CMM report, the work that decides a fixture’s accuracy happens in-house.",
+      items: [
+        {
+          title: "In-house 3D & 2D design",
+          text: "Fixture concepts, detailing and drawings are developed by our own design team.",
+          image: "Engineers at work in the EXCEL design office"
+        },
+        {
+          title: "CMM measurement",
+          text: "Two in-house CMMs: X 3000 × Y 2500 × Z 600 mm and X 2500 × Y 3000 × Z 700 mm.",
+          image: "Fixture being measured on the in-house CMM"
+        },
+        {
+          title: "Shop floor",
+          text: "In-house VMC and tool room for machining, fitting and assembly of every fixture.",
+          image: "Machining and assembly on the EXCEL shop floor"
+        }
+      ],
+      gallery: [
+        "Fitters working at assembly benches",
+        "Machining and bench work on the shop floor",
+        "Milling and fitting stations",
+        "Tool room and inspection area"
+      ]
+    },
+    vendors: {
+      eyebrow: "Dedicated vendor base",
+      title: "Specialist partners for specialist work.",
+      text: "Trusted vendors we work with regularly, so every process gets the right expertise.",
+      items: ["Heat treatment", "Electroplating", "Wire-cut", "Fabrication", "Rough machining", "Large-size CNC"]
+    },
+    assurance: {
+      eyebrow: "EXCEL assurance",
+      title: "Your client’s appreciation and trust.",
+      items: [
+        ["Appreciation", "Fixtures that look and perform like master gauges — so your customer is pleased, not just satisfied."],
+        ["Trust", "Repeatable, reliable results on CMM that hold up after long use."],
+        ["Clarity", "Honest timelines and regular status updates, with early notice if anything changes."],
+        ["Peace of mind", "A delightful experience across the whole checking-fixture development journey."]
+      ]
+    },
+    cta: {
+      eyebrow: "See the standard for yourself.",
+      title: "Visit us, or send us your part.",
+      link: "Get in touch"
     }
   },
 
   capabilities: {
     pageTitle: "Capabilities",
+    metaDescription: "Checking fixtures for critical automotive assemblies, stampings and multi-part master assemblies — standardized parts, branded BOP and CMM prove-out in one go.",
     hero: {
-      eyebrow: "Capabilities / 01—04",
-      title: "Built around the <span>decision</span> your team needs to make.",
-      text: "We translate product definition and inspection intent into robust, intuitive checking fixtures for production and quality environments.",
-      mediaLabel: "Engineering around the part — not around a catalogue."
+      eyebrow: "Capabilities",
+      title: "Fixtures for <span>critical</span> assemblies & stampings.",
+      text: "We design, build and prove out checking fixtures for automotive sheet-metal assemblies and stampings — from single parts to multi-part master assemblies.",
+      mediaLabel: "Proved out on CMM in one go."
     },
     items: [
       {
-        title: "Attribute Checking Fixtures",
-        text: "Fast, repeatable go / no-go decisions for component features, profiles and assembly conditions.",
-        points: ["Flush & gap verification", "Profile checking", "Checking pins and feeler access"]
+        title: "Assembly checking fixtures",
+        text: "Fixtures for critical automotive assemblies, designed so every check is repeatable and every result is trusted.",
+        points: ["Floor, dash and body-side assemblies", "Axle and suspension beams", "Steering support members"]
       },
       {
-        title: "Variable Checking Fixtures",
-        text: "Stable part presentation for measured data collection using indicators, probes and measurement systems.",
-        points: ["Dial indicator stations", "Data collection access", "Reference setting provisions"]
+        title: "Stamping checking fixtures",
+        text: "Fixtures for critical sheet-metal stampings, built for reliable results on the shop floor.",
+        points: ["Panels and members", "Detailed, user-friendly labeling", "Rust-protected finish"]
       },
       {
-        title: "Assembly Fixtures",
-        text: "Controlled location and clamping for sub-assembly verification and process confidence.",
-        points: ["Welded assemblies", "Matched component sets", "Functional relationships"]
+        title: "Master assembly fixtures",
+        text: "Multi-part master assembly fixtures that bring several mating parts onto a single, CMM-proven base.",
+        points: ["Multiple parts on one base", "Proved out on CMM", "Built to look like a master gauge"]
       },
       {
-        title: "Fixture Rework & Support",
-        text: "Practical support when the component, program or inspection requirement changes.",
-        points: ["Engineering changes", "Wear-item replacement", "Inspection and correction"]
+        title: "Design, CMM & support",
+        text: "In-house 3D and 2D design and CMM measurement, with complete documentation and responsive service after delivery.",
+        points: ["In-house 3D & 2D design", "CMM and pin & bush reports", "Responsive after-delivery support"]
       }
     ],
-    applications: {
-      eyebrow: "Part applications",
-      title: "Ready for varied geometries.",
-      text: "Fixture architecture selected around component behavior and program need.",
-      items: ["Sheet metal panels", "Welded assemblies", "Plastic trims", "Machined parts", "Structural components", "Complex profiles"]
-    },
-    priorities: {
-      eyebrow: "Design priorities",
-      title: "Repeatability is a system.",
-      items: [
-        ["Locate", "A deliberate datum scheme that reflects inspection intent."],
-        ["Clamp", "Controlled restraint without masking component condition."],
-        ["Access", "Clear, safe reach to every feature that matters."],
-        ["Maintain", "Serviceable details and durable construction for long-term use."]
+    difference: {
+      eyebrow: "The EXCEL difference",
+      title: "Accurate. Durable. <span>Delightful.</span>",
+      groups: [
+        {
+          title: "Built for accuracy",
+          points: [
+            "Maximum use of standardized child parts",
+            "Branded bought-out parts (BOP) only",
+            "Right heat treatment for every relevant child part — with proof",
+            "Detailed inspection report of pins and bushes",
+            "No play in pins & bushes, or in moving parts like hinges and swing units",
+            "Proved out on CMM in one go — without a long list of NG points"
+          ]
+        },
+        {
+          title: "Built for the people using it",
+          points: [
+            "Premium aesthetics comparable with international fixtures",
+            "Detailed labeling for maximum user-friendliness",
+            "Special care for rust, coating and paint",
+            "Authentic, regular project status updates — no follow-ups",
+            "Attention to detail that makes a big difference"
+          ]
+        }
       ]
+    },
+    parts: {
+      mediaLabel: "EXCEL standardized parts & BOP",
+      eyebrow: "Consistent quality",
+      title: "Standardized parts.<br>Branded BOP.",
+      points: [
+        "Standardized child parts across every fixture",
+        "Branded bought-out parts — never local or unbranded",
+        "Correct heat treatment, with proof",
+        "Inspection report for every pin and bush"
+      ],
+      link: "Discuss your requirement"
+    },
+    applications: {
+      eyebrow: "In-house & vendor capability",
+      title: "Everything a fixture needs.",
+      text: "In-house design, measurement and machining, supported by a dedicated vendor base for specialist processes.",
+      items: ["3D & 2D design", "CMM", "VMC", "Tool room", "Heat treatment", "Electroplating", "Wire-cut", "Fabrication", "Rough machining", "Large-size CNC"]
     },
     cta: {
       eyebrow: "A fixture brief can start with a part file.",
       title: "Let’s review your requirement.",
-      link: "Send your program details"
+      link: "Send your project details"
     }
   },
 
   work: {
-    pageTitle: "Fixture Gallery",
+    pageTitle: "Gallery",
+    metaDescription: "A gallery of checking fixtures designed and built by EXCEL Engineering for critical automotive assemblies and stampings.",
     hero: {
-      eyebrow: "Fixture gallery / Selected builds",
-      title: "Proof lives in <span>details.</span>",
-      text: "Real fixtures, real scale, real production thinking. Select any build to see it in motion."
+      eyebrow: "Gallery / Selected builds",
+      title: "Proof lives in the <span>details.</span>",
+      text: "A selection of checking fixtures designed and built by EXCEL for critical automotive assemblies. Customer and part details are withheld to protect our clients’ confidentiality."
     },
-    introduction: {
-      label: "Selected work / 01—04",
-      text: "These examples demonstrate fixture complexity and build approach. Program-specific customer details remain confidential."
+    videos: {
+      label: "In motion / 01—02",
+      text: "Clamps, pins and checking points up close — the detail that makes a fixture reliable.",
+      items: [
+        ["Wheel house assembly fixture", "Clamps, pins and labeled checking points"],
+        ["Fixture pair", "Two finished fixtures on our shop floor"]
+      ]
     },
     play: "Play",
     pause: "Pause",
     mediaCode: "EXCEL / CF",
-    items: [
-      ["H-One / Assembly Check", "Large-format, multi-point checking architecture"],
-      ["G-Tip / Profile Check", "Vertical presentation with accessible check points"],
-      ["G-Tip / Production Check", "Operator-forward loading and secure location"],
-      ["Matched Fixture Set", "Paired build for left- and right-hand components"]
-    ],
-    principles: ["Locate", "Clamp", "Verify", "Decide"],
+    photos: {
+      label: "Fixture gallery",
+      text: "Fixture sizes shown as length × width. Select any photo to enlarge it.",
+      close: "Close",
+      items: [
+        ["Master assembly fixture", "Multiple mating parts · 1800 × 750 mm"],
+        ["Wheel house assembly, rear", "1500 × 985 mm"],
+        ["Dashboard lower assembly", "1700 × 800 mm"],
+        ["Rear axle beam assembly", "1950 × 850 mm"],
+        ["Rear floor side member", "1800 × 750 mm"],
+        ["Steering support member", "1750 × 750 mm"],
+        ["Rear suspension beam", "1800 × 750 mm"],
+        ["Body side outer", "1680 × 1590 mm"],
+        ["Front side frame", "1600 × 790 mm"],
+        ["Dash panel assembly", "Large-format assembly fixture"],
+        ["Front floor panel", "1600 × 1000 mm"],
+        ["Front side member", "1600 × 600 mm"]
+      ]
+    },
+    principles: ["Design", "Build", "Verify", "Deliver"],
     cta: {
-      eyebrow: "Your component belongs in the next frame.",
-      title: "Build the tool your quality team trusts.",
+      eyebrow: "Your part belongs in the next frame.",
+      title: "Build the fixture your quality team trusts.",
       link: "Discuss your fixture"
     }
   },
 
   contact: {
-    pageTitle: "Discuss a Program",
+    pageTitle: "Contact",
+    metaDescription: "Contact EXCEL Engineering, Ghaziabad (Delhi NCR): +91 120 265 7057, sales@excelengg2.com. Send us your checking-fixture requirement.",
     hero: {
-      eyebrow: "Discuss a program",
-      title: "Bring us the <span>part.</span><br>We’ll bring the clarity.",
-      text: "Tell us what must be checked, where the fixture will be used and what success looks like. An initial discussion is enough to begin.",
-      inputsLabel: "Useful inputs",
-      inputs: ["3D part data / drawing", "GD&T and datum scheme", "Control plan or check list", "Program timing and quantity"]
+      eyebrow: "Contact",
+      title: "Bring us the <span>part.</span><br>We’ll bring peace of mind.",
+      text: "Tell us about the assembly or stamping you need to check. Share what you have — an initial discussion is enough to begin.",
+      inputsLabel: "Helpful to share",
+      inputs: ["3D part data and drawing", "Datum scheme / GD&T", "Number of parts and fixtures", "Target delivery timeline"]
     },
     form: {
       name: "Full name",
@@ -188,25 +351,38 @@ window.EXCEL_CONTENT = {
       companyPlaceholder: "Company name",
       email: "Work email",
       emailPlaceholder: "name@company.com",
-      phone: "Phone / WhatsApp",
-      phonePlaceholder: "+00 000 000 0000",
-      requirement: "Fixture requirement",
-      requirementOptions: ["Checking fixture", "Assembly checking fixture", "Fixture rework / support", "Not sure yet"],
+      phone: "Phone",
+      phonePlaceholder: "+91 00000 00000",
+      requirement: "Requirement",
+      requirementOptions: ["Assembly checking fixture", "Stamping checking fixture", "Master assembly fixture", "Other / not sure yet"],
       details: "Project details",
-      detailsPlaceholder: "Part type, check requirements, timing, destination…",
-      note: "Demo form — connect this to your preferred form service before launch.",
-      submit: "Submit project brief",
-      success: "Thank you. Your brief is ready to send once the form endpoint is connected."
+      detailsPlaceholder: "Part type, number of fixtures, timeline…",
+      note: "Sending opens your email app with this brief addressed to sales@excelengg2.com. Your details are used only to reply to your enquiry.",
+      submit: "Send project brief",
+      success: "Your email app should now be open with the brief ready to send. If nothing opened, please write to sales@excelengg2.com.",
+      emailSubject: "Checking fixture enquiry"
     },
     context: {
-      eyebrow: "Direct context",
-      title: "Designed and built in India.",
-      text: "Supporting automotive and industrial quality programs with fixture engineering, manufacture and prove-out.",
+      eyebrow: "Reach us directly",
+      title: "EXCEL Engineering",
+      address: "80K/II, 15A, Rajender Nagar Industrial Area, Mohan Nagar, Ghaziabad 201007 (Delhi NCR), India",
+      mapLink: "Open in Google Maps",
       details: [
-        ["Response", "Focused, engineering-led review"],
-        ["Program support", "Domestic & international"],
-        ["What happens next", "Requirement review → concept discussion → proposal"]
+        ["Office", "+91 120 265 7057"],
+        ["Mobile", "+91 98111 50794"],
+        ["Mobile", "+91 70426 41189"],
+        ["Sales", "sales@excelengg2.com"],
+        ["Management", "management@excelengg2.com"]
       ]
     }
+  },
+
+  notFound: {
+    pageTitle: "Page not found",
+    metaDescription: "This page could not be found.",
+    eyebrow: "Error 404",
+    title: "This page is <span>out of tolerance.</span>",
+    text: "The page you were looking for has moved or no longer exists.",
+    link: "Back to home"
   }
 };
